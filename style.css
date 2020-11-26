@@ -1,0 +1,199 @@
+body {
+  height: 100vh;
+  background-color: rgb(124, 122, 122);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 350px;
+  height: 350px;
+  background-color: rgb(184, 178, 178);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  /* background-color: #ccc; */
+  margin: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation-name: airplane;
+  animation-delay: 1s;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  z-index: 3;
+}
+
+@keyframes airplane {
+  30% {
+    margin: 130px 0 0 -40px;
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    margin: -100px 0 0 140px;
+    transform: scale(0.2);
+    opacity: 0;
+  }
+}
+
+.item .line1 {
+  width: 197px;
+    height: 5px;
+    transform: rotate(-26deg);
+    margin: auto;
+    top: 46px;
+    left: 10px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.item .line2 {
+  width: 187px;
+  height: 5px;
+  transform: rotate(113deg);
+  margin: auto;
+  top: 88px;
+  left: 66px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.item .line3 {
+  width: 54px;
+  height: 5px;
+  transform: rotate(38deg);
+  margin: auto;
+  top: 107px;
+  left: 17px;
+  background-color: #fff;
+  position: absolute;
+}
+.item .line4 {
+  width: 54px;
+  height: 5px;
+  transform: rotate(38deg);
+  margin: auto;
+  top: 153px;
+  left: 74px;
+  background-color: #fff;
+  position: absolute;
+}
+.item .line5 {
+  width: 172px;
+  height: 5px;
+  transform: rotate(138deg);
+  margin: auto;
+  top: 64px;
+  left: 40px;
+  background-color: #fff;
+  position: absolute;
+}
+.item .line6 {
+  width: 172px;
+    height: 5px;
+    transform: rotate(131deg);
+    margin: auto;
+    top: 72px;
+    left: 49px;
+    background-color: #fff;
+    position: absolute;
+}
+.item .line7 {
+  width: 45px;
+  height: 5px;
+  transform: rotate(75deg);
+  margin: auto;
+  top: 140px;
+  left: 47px;
+  background-color: #fff;
+  position: absolute;
+}
+.item .line8 {
+  width: 27px;
+  height: 5px;
+  transform: rotate(100deg);
+  margin: auto;
+  top: 146px;
+  left: 64px;
+  background-color: #fff;
+  position: absolute;
+}
+.item .line9 {
+  width: 29px;
+  height: 5px;
+  transform: rotate(139deg);
+  margin: auto;
+  top: 152px;
+  left: 69px;
+  background-color: #fff;
+  position: absolute;
+}
+
+h2 {
+  position: absolute;
+  top: 220px;
+  left: 61px;
+  color: rgb(124, 122, 122);
+  z-index: 2;
+  border-bottom: 1px solid rgb(75, 72, 72);
+}
+
+h3 {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  color: #fff;
+  z-index: 2;
+  font-size: 28px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  opacity: 0;
+  animation-name: slideDown;
+  animation-delay: 6.5s;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes slideDown {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+  100% {
+    top: 160px;
+    opacity: 1;
+  }
+}
+
+/* .test {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  position: absolute;
+  animation-name: test;
+  animation-duration: 4s;
+}
+@keyframes test {
+  0% {
+    top: 50px;
+    left: 50px;
+  }
+  100% {
+    top: 100px;
+    left: 100px;
+  }
+} */
